@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.container
+    br
+    div.jumbotron
+      h1.display-4 Send Message
+      br
+      input.form-control(id='name', placeholder='Name')
+      br
+      textarea.form-control(id='message' placeholder='Your message here')
+      br
+      button.btn.btn-success(id='send') Send
+
+      div(id='messages')
